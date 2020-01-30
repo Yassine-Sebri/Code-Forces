@@ -1,6 +1,8 @@
-prob = [int(weight) for weight in input().split()]
+from sys import stdin, stdout
+
+n, m = map(int, stdin.readline().split())
 output = 0
-while prob[0] <= prob[1]:
-    prob[0], prob[1] = prob[0] * 3, prob[1] * 2
+while n <= m:
+    n, m = n * 3, m * 2
     output += 1
-print(output)
+stdout.write(str(output))
