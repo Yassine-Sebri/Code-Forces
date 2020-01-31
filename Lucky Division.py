@@ -2,7 +2,7 @@ from sys import stdin, stdout
 
 
 def main():
-    n = int(stdin.readline())
+    n = int(input())
     lucky_numbers = [4, 7, 44, 47, 74, 77, 444, 447, 474, 477, 744, 747, 474, 777]
     lucky = False
     index = 0
@@ -10,9 +10,9 @@ def main():
         lucky = (n % lucky_numbers[index]) == 0
         index += 1
     if lucky:
-        stdout.write('YES')
+        print('YES')
     else:
-        stdout.write('NO')
+        print('NO')
 
 
 main()
