@@ -1,13 +1,18 @@
 from sys import stdin, stdout
 
-n = int(stdin.readline())
-lucky_numbers = [4, 7, 44, 47, 74, 77, 444, 447, 474, 477, 744, 747, 474, 777]
-lucky = False
-index = 0
-while not lucky and index < 14:
-    lucky = (n % lucky_numbers[index]) == 0
-    index += 1
-if lucky:
-    stdout.write('YES')
-else:
-    stdout.write('NO')
+
+def main():
+    n = int(stdin.readline())
+    lucky_numbers = [4, 7, 44, 47, 74, 77, 444, 447, 474, 477, 744, 747, 474, 777]
+    lucky = False
+    index = 0
+    while not lucky and index < 14:
+        lucky = (n % lucky_numbers[index]) == 0
+        index += 1
+    if lucky:
+        stdout.write('YES')
+    else:
+        stdout.write('NO')
+
+
+main()
