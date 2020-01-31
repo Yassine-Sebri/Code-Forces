@@ -14,7 +14,7 @@ def main():
                     refuel += 1
                     fuel = b - f
                 else:
-                    fuel = fuel -a
+                    fuel = fuel - a
             else:
                 if fuel < 2 * a - f:
                     refuel += 1
