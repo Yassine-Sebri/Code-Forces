@@ -4,7 +4,7 @@ def main():
     maximum = 0
     for i in range(n):
         index, curr, time = i, 0, 0
-        while index < n and (time + books[index]) < t:
+        while index < n and (time + books[index]) <= t:
             time += books[index]
             index += 1
             curr += 1
